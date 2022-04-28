@@ -1,0 +1,17 @@
+item.classicwebshooter.name=Классические веб-шутеры
+item.tasmwebshooter.name=Веб-шутеры НЧП
+item.classicwebshooter2.name=Продвинутые классические веб-шутеры
+item.biocable.name=Био-кабель
+
+key.boththrow.desc=Перезарядка
+key.leftthrow.desc=Левый
+key.rightthrow.desc=Правый
+key.rocket.desc=Изменить мод
+key.enderlaunch.desc=Инерция
+key.motoronoff.desc=Тянуть
+key.slide.desc=Скорость
+
+key.grapplemod.category=THWIP MOD
+
+itemGroup.tabGrapplemod=THWIP MOD
+itemGroup.tabThwipmod=THWIP MOD

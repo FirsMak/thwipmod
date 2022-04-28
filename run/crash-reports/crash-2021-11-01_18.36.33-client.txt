@@ -1,0 +1,141 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 11/1/21 6:36 PM
+Description: Rendering entity in world
+
+java.lang.IllegalStateException: Already building!
+	at net.minecraft.client.renderer.BufferBuilder.begin(BufferBuilder.java:187)
+	at com.yyon.grapplinghook.entities.RenderGrappleArrow.drawSegment(RenderGrappleArrow.java:302)
+	at com.yyon.grapplinghook.entities.RenderGrappleArrow.doRender(RenderGrappleArrow.java:208)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntity(RenderManager.java:384)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:368)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:628)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1347)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1259)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1062)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1119)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:398)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.legacydev.Main.start(Main.java:86)
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.client.renderer.BufferBuilder.begin(BufferBuilder.java:187)
+	at com.yyon.grapplinghook.entities.RenderGrappleArrow.drawSegment(RenderGrappleArrow.java:302)
+	at com.yyon.grapplinghook.entities.RenderGrappleArrow.doRender(RenderGrappleArrow.java:208)
+
+-- Entity being rendered --
+Details:
+	Entity Type: grapplemod:grapplemod (com.yyon.grapplinghook.entities.grappleArrow)
+	Entity ID: 2646
+	Entity Name: entity.grappleArrow.name
+	Entity's Exact location: 39901.44, 5.24, 40147.24
+	Entity's Block location: World: (39901,5,40147), Chunk: (at 13,0,3 in 2493,2509; contains blocks 39888,0,40144 to 39903,255,40159), Region: (77,78; contains chunks 2464,2496 to 2495,2527, blocks 39424,0,39936 to 39935,255,40447)
+	Entity's Momentum: -2.36, -0.38, 3.86
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+
+-- Renderer details --
+Details:
+	Assigned renderer: com.yyon.grapplinghook.entities.RenderGrappleArrow@187609cb
+	Location: -0.05,1.51,0.08 - World: (-1,1,0), Chunk: (at 15,0,0 in -1,0; contains blocks -16,0,0 to -1,255,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Rotation: -31.444654
+	Delta: 0.019996405
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntity(RenderManager.java:384)
+	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:368)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:628)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorldPass(EntityRenderer.java:1347)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1259)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player662'/69, l='MpServer', x=39903.82, y=4.00, z=40143.34]]
+	Chunk stats: MultiplayerChunkCache: 574, 574
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (787,4,408), Chunk: (at 3,0,8 in 49,25; contains blocks 784,0,400 to 799,255,415), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 94124 game time, 94124 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 52 total; [EntitySkeleton['Skeleton'/128, l='MpServer', x=39914.70, y=4.00, z=40066.56], EntitySkeleton['Skeleton'/143, l='MpServer', x=39952.25, y=4.00, z=40162.67], EntityCreeper['Creeper'/146, l='MpServer', x=39969.50, y=4.00, z=40139.50], EntityZombie['Zombie'/147, l='MpServer', x=39977.77, y=4.00, z=40129.44], EntitySkeleton['Skeleton'/156, l='MpServer', x=39979.80, y=4.00, z=40117.62], EntityCreeper['Creeper'/157, l='MpServer', x=39983.50, y=4.00, z=40116.50], EntityZombie['Zombie'/158, l='MpServer', x=39952.83, y=4.00, z=40108.67], EntityZombie['Zombie'/159, l='MpServer', x=39964.17, y=4.00, z=40107.68], EntityCreeper['Creeper'/160, l='MpServer', x=39972.92, y=4.00, z=40085.59], EntityZombie['Zombie'/161, l='MpServer', x=39957.79, y=4.00, z=40118.19], EntityZombie['Zombie'/70, l='MpServer', x=39900.63, y=4.00, z=40129.21], EntitySkeleton['Skeleton'/71, l='MpServer', x=39908.24, y=4.00, z=40133.24], EntitySkeleton['Skeleton'/72, l='MpServer', x=39861.70, y=4.00, z=40115.15], EntityZombie['Zombie'/77, l='MpServer', x=39830.50, y=4.00, z=40134.50], EntitySkeleton['Skeleton'/78, l='MpServer', x=39846.74, y=4.00, z=40123.30], EntitySkeleton['Skeleton'/79, l='MpServer', x=39847.50, y=4.00, z=40126.50], EntitySpider['Spider'/80, l='MpServer', x=39842.50, y=4.00, z=40121.50], EntitySkeleton['Skeleton'/81, l='MpServer', x=39861.50, y=4.00, z=40101.50], EntitySkeleton['Skeleton'/82, l='MpServer', x=39862.50, y=4.00, z=40098.50], EntityCreeper['Creeper'/85, l='MpServer', x=39828.83, y=4.00, z=40114.31], EntityZombie['Zombie'/86, l='MpServer', x=39830.78, y=4.00, z=40112.18], grappleArrow['entity.grappleArrow.name'/2646, l='MpServer', x=39901.44, y=5.24, z=40147.24]2113021700], EntitySkeleton['Skeleton'/87, l='MpServer', x=39831.54, y=4.00, z=40112.76], EntityZombie['Zombie'/92, l='MpServer', x=39853.23, y=4.00, z=40093.18], EntityCreeper['Creeper'/93, l='MpServer', x=39833.50, y=4.00, z=40068.50], EntitySkeleton['Skeleton'/98, l='MpServer', x=39837.50, y=4.00, z=40063.50], EntitySkeleton['Skeleton'/99, l='MpServer', x=39941.29, y=4.00, z=40153.25], EntitySkeleton['Skeleton'/100, l='MpServer', x=39943.22, y=4.00, z=40153.22], EntitySpider['Spider'/101, l='MpServer', x=39877.50, y=4.00, z=40193.50], EntitySkeleton['Skeleton'/102, l='MpServer', x=39875.19, y=4.00, z=40199.28], EntitySkeleton['Skeleton'/103, l='MpServer', x=39909.19, y=4.00, z=40173.28], EntitySkeleton['Skeleton'/104, l='MpServer', x=39919.54, y=4.00, z=40175.21], EntitySkeleton['Skeleton'/105, l='MpServer', x=39929.25, y=4.00, z=40157.61], EntitySkeleton['Skeleton'/106, l='MpServer', x=39936.40, y=4.00, z=40142.69], EntitySkeleton['Skeleton'/107, l='MpServer', x=39925.50, y=4.00, z=40126.50], EntitySkeleton['Skeleton'/108, l='MpServer', x=39926.21, y=4.00, z=40123.19], EntityZombie['Zombie'/109, l='MpServer', x=39943.50, y=4.00, z=40098.50], EntitySpider['Spider'/110, l='MpServer', x=39877.01, y=4.00, z=40185.02], EntitySpider['Spider'/111, l='MpServer', x=39896.00, y=4.00, z=40164.94], EntitySkeleton['Skeleton'/112, l='MpServer', x=39930.39, y=4.00, z=40139.26], EntitySpider['Spider'/113, l='MpServer', x=39913.98, y=4.00, z=40125.01], EntityZombie['Zombie'/114, l='MpServer', x=39864.19, y=4.00, z=40186.54], EntityEnderman['Enderman'/115, l='MpServer', x=39871.76, y=4.00, z=40190.78], EntityPlayerSP['Player662'/69, l='MpServer', x=39903.82, y=4.00, z=40143.34], EntityCreeper['Creeper'/117, l='MpServer', x=39895.26, y=4.00, z=40126.18], EntitySkeleton['Skeleton'/118, l='MpServer', x=39897.50, y=4.00, z=40127.50], EntitySkeleton['Skeleton'/119, l='MpServer', x=39901.85, y=4.00, z=40124.66], EntitySkeleton['Skeleton'/120, l='MpServer', x=39944.41, y=4.00, z=40072.85], EntityZombie['Zombie'/123, l='MpServer', x=39875.23, y=4.00, z=40115.36], EntitySpider['Spider'/124, l='MpServer', x=39882.84, y=4.00, z=40127.00], EntitySkeleton['Skeleton'/125, l='MpServer', x=39873.17, y=4.00, z=40115.23], EntityZombie['Zombie'/126, l='MpServer', x=39926.72, y=4.00, z=40074.84]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2741)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:419)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.legacydev.Main.start(Main.java:86)
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 5.14.11-arch1-1
+	Java Version: 1.8.0_312, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 352008384 bytes (335 MB) / 961544192 bytes (917 MB) up to 2278031360 bytes (2172 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2855 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID         | Version      | Source                                                             | Signature |
+	|:------ |:---------- |:------------ |:------------------------------------------------------------------ |:--------- |
+	| LCHIJA | minecraft  | 1.12.2       | minecraft.jar                                                      | None      |
+	| LCHIJA | mcp        | 9.42         | minecraft.jar                                                      | None      |
+	| LCHIJA | FML        | 8.0.99.99    | forge-1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | forge      | 14.23.5.2855 | forge-1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | grapplemod | 1.12.2-v12   | main                                                               | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel Open Source Technology Center' Version: '3.0 Mesa 21.2.3' Renderer: 'Mesa DRI Intel(R) HD Graphics 4000 (IVB GT2)'
+	Launched Version: ${MC_VERSION}
+	LWJGL: 2.9.4
+	OpenGL: Mesa DRI Intel(R) HD Graphics 4000 (IVB GT2) GL version 3.0 Mesa 21.2.3, Intel Open Source Technology Center
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz

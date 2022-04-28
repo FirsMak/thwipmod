@@ -1,0 +1,21 @@
+item.classicwebshooter.name=Web-shooter CLASSIC
+item.tasmwebshooter.name=Web-shooter TASM1
+item.classicwebshooter2.name=Web-shooter CLASSIC UPGRADE
+item.biocable.name=Bio-cable
+
+key.boththrow.desc=Recharge
+key.leftthrow.desc=Left
+key.rightthrow.desc=Right
+key.rocket.desc=Change mode
+key.enderlaunch.desc=Inetia
+key.motoronoff.desc=Pull
+key.slide.desc=Speed
+
+key.grapplemod.category=THWIP MOD
+
+enchantment.wallrunenchantment=Wall Running
+enchantment.doublejumpenchantment=Double Jump
+enchantment.slidingenchantment=Sliding
+
+itemGroup.tabGrapplemod=Grappling Hook Mod
+itemGroup.tabThwipmod=THWIP MOD

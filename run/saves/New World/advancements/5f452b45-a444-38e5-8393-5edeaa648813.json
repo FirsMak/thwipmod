@@ -1,0 +1,14 @@
+{
+  "minecraft:recipes/building_blocks/polished_granite": {
+    "criteria": {
+      "has_stone": "2021-11-15 22:49:20 +0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2021-11-15 22:49:20 +0500"
+    },
+    "done": false
+  }
+}

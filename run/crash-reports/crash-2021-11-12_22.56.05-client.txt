@@ -1,0 +1,122 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 11/12/21 10:56 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.yyon.grapplinghook.controllers.grappleController.applyAirFriction(grappleController.java:925)
+	at com.yyon.grapplinghook.controllers.grappleController.updatePlayerPos(grappleController.java:223)
+	at com.yyon.grapplinghook.controllers.grappleController.doClientTick(grappleController.java:181)
+	at com.yyon.grapplinghook.ClientProxyClass.onClientTick(ClientProxyClass.java:335)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_23_ClientProxyClass_onClientTick_ClientTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPreClientTick(FMLCommonHandler.java:344)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1708)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1098)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:398)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.legacydev.Main.start(Main.java:86)
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at com.yyon.grapplinghook.controllers.grappleController.applyAirFriction(grappleController.java:925)
+	at com.yyon.grapplinghook.controllers.grappleController.updatePlayerPos(grappleController.java:223)
+	at com.yyon.grapplinghook.controllers.grappleController.doClientTick(grappleController.java:181)
+	at com.yyon.grapplinghook.ClientProxyClass.onClientTick(ClientProxyClass.java:335)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_23_ClientProxyClass_onClientTick_ClientTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPreClientTick(FMLCommonHandler.java:344)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player811'/56, l='MpServer', x=33759.15, y=13.99, z=-3379.74]]
+	Chunk stats: MultiplayerChunkCache: 961, 961
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (71,4,-319), Chunk: (at 7,0,1 in 4,-20; contains blocks 64,0,-320 to 79,255,-305), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 1099469 game time, 338567 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 46 total; [EntitySlime['Slime'/72, l='MpServer', x=33708.37, y=4.00, z=-3440.24], EntitySlime['Slime'/3144, l='MpServer', x=33791.50, y=5.00, z=-3393.10], EntitySlime['Slime'/73, l='MpServer', x=33732.90, y=4.95, z=-3451.11], EntitySlime['Slime'/75, l='MpServer', x=33703.92, y=4.00, z=-3443.92], EntitySlime['Slime'/7371, l='MpServer', x=33766.49, y=4.00, z=-3348.36], EntitySlime['Slime'/77, l='MpServer', x=33738.64, y=4.00, z=-3306.79], EntitySlime['Slime'/78, l='MpServer', x=33738.17, y=4.00, z=-3332.98], EntitySlime['Slime'/79, l='MpServer', x=33762.89, y=4.01, z=-3372.68], EntitySlime['Slime'/80, l='MpServer', x=33755.52, y=4.00, z=-3361.08], EntitySlime['Slime'/81, l='MpServer', x=33736.78, y=4.00, z=-3311.93], EntitySlime['Slime'/82, l='MpServer', x=33720.27, y=4.00, z=-3314.85], EntitySlime['Slime'/83, l='MpServer', x=33793.31, y=4.00, z=-3383.95], EntitySlime['Slime'/84, l='MpServer', x=33767.26, y=4.00, z=-3369.16], EntitySlime['Slime'/85, l='MpServer', x=33767.19, y=4.53, z=-3343.89], EntitySlime['Slime'/86, l='MpServer', x=33767.31, y=4.67, z=-3342.75], EntitySlime['Slime'/87, l='MpServer', x=33785.78, y=4.00, z=-3422.70], EntitySlime['Slime'/88, l='MpServer', x=33789.50, y=4.00, z=-3423.26], EntitySlime['Slime'/89, l='MpServer', x=33763.53, y=4.00, z=-3432.17], EntitySlime['Slime'/90, l='MpServer', x=33749.53, y=4.95, z=-3392.82], EntitySlime['Slime'/91, l='MpServer', x=33732.75, y=4.95, z=-3374.22], EntitySlime['Slime'/92, l='MpServer', x=33740.16, y=4.00, z=-3386.67], EntitySlime['Slime'/93, l='MpServer', x=33791.73, y=5.10, z=-3453.04], EntitySlime['Slime'/94, l='MpServer', x=33743.23, y=4.95, z=-3387.33], EntitySlime['Slime'/95, l='MpServer', x=33747.74, y=4.67, z=-3387.96], EntitySlime['Slime'/96, l='MpServer', x=33732.54, y=5.17, z=-3365.46], EntitySlime['Slime'/97, l='MpServer', x=33741.24, y=4.72, z=-3359.31], EntitySlime['Slime'/98, l='MpServer', x=33707.93, y=4.08, z=-3328.36], EntitySlime['Slime'/99, l='MpServer', x=33823.56, y=4.00, z=-3437.97], EntitySlime['Slime'/100, l='MpServer', x=33811.39, y=4.00, z=-3439.27], EntityPlayerSP['Player811'/56, l='MpServer', x=33759.15, y=13.99, z=-3379.74], EntitySlime['Slime'/101, l='MpServer', x=33789.68, y=4.00, z=-3430.60], EntitySlime['Slime'/102, l='MpServer', x=33705.70, y=5.10, z=-3317.40], EntitySlime['Slime'/103, l='MpServer', x=33749.13, y=4.00, z=-3369.15], EntitySlime['Slime'/104, l='MpServer', x=33780.33, y=5.17, z=-3457.94], EntitySlime['Slime'/105, l='MpServer', x=33744.19, y=4.44, z=-3430.39], EntitySlime['Slime'/106, l='MpServer', x=33689.14, y=4.08, z=-3344.01], EntitySlime['Slime'/107, l='MpServer', x=33692.42, y=4.95, z=-3340.15], EntitySlime['Slime'/108, l='MpServer', x=33813.09, y=4.78, z=-3318.48], EntitySlime['Slime'/112, l='MpServer', x=33803.60, y=4.00, z=-3336.40], EntitySlime['Slime'/113, l='MpServer', x=33790.91, y=4.00, z=-3330.13], EntitySlime['Slime'/114, l='MpServer', x=33799.46, y=4.48, z=-3323.37], EntitySlime['Slime'/115, l='MpServer', x=33814.64, y=4.95, z=-3342.81], EntitySlime['Slime'/118, l='MpServer', x=33838.24, y=4.00, z=-3414.17], EntitySlime['Slime'/120, l='MpServer', x=33824.29, y=4.00, z=-3408.64], EntitySlime['Slime'/14266, l='MpServer', x=33801.29, y=4.00, z=-3328.39], grappleArrow['entity.grappleArrow.name'/17980, l='MpServer', x=33750.48, y=32.23, z=-3353.05]1287098623]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:420)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2741)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:427)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.legacydev.Main.start(Main.java:86)
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 5.14.11-arch1-1
+	Java Version: 1.8.0_312, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Amazon.com Inc.
+	Memory: 633447968 bytes (604 MB) / 1042284544 bytes (994 MB) up to 2278031360 bytes (2172 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2855 5 mods loaded, 5 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID         | Version      | Source                                                             | Signature |
+	|:------ |:---------- |:------------ |:------------------------------------------------------------------ |:--------- |
+	| LCHIJA | minecraft  | 1.12.2       | minecraft.jar                                                      | None      |
+	| LCHIJA | mcp        | 9.42         | minecraft.jar                                                      | None      |
+	| LCHIJA | FML        | 8.0.99.99    | forge-1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | forge      | 14.23.5.2855 | forge-1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12-recomp.jar | None      |
+	| LCHIJA | grapplemod | 1.12.2-v12   | main                                                               | None      |
+
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel Open Source Technology Center' Version: '3.0 Mesa 21.2.3' Renderer: 'Mesa DRI Intel(R) HD Graphics 4000 (IVB GT2)'
+	Launched Version: ${MC_VERSION}
+	LWJGL: 2.9.4
+	OpenGL: Mesa DRI Intel(R) HD Graphics 4000 (IVB GT2) GL version 3.0 Mesa 21.2.3, Intel Open Source Technology Center
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz

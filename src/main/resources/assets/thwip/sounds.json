@@ -1,0 +1,167 @@
+ {
+ 	"slide": {
+ 		"category": "player",
+		"subtitle": "thwip.subtitle.slide",
+		"sounds": [ "thwip:slide1", "grapplemod:slide2", "grapplemod:slide3" ]
+	},
+	"doublejump": {
+		"category": "player",
+	   "subtitle": "thwip.subtitle.doublejump",
+	   "sounds": [ "thwip:jump1", "grapplemod:jump2", "grapplemod:jump3", "grapplemod:jump4" ]
+   },
+	 "thwipstart": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipstart",
+		 "sounds": [
+			 {
+				 "name": "thwip:thwipstart",
+				 "volume": 40.0
+			 }
+		 ]
+	 },
+	 "thwipnothas": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipnothas",
+		 "sounds": [
+			 {
+				 "name": "thwip:thwipnothas",
+				 "volume": 40.0
+			 }
+		 ]
+	 },
+	 "thwipstartc1": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipstartc1",
+		 "sounds": [
+			 {
+				 "name": "thwip:thwipstartc1",
+				 "volume": 40.0
+			 }
+		 ]
+	 },
+	 "thwipstartc2": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipstartc2",
+		 "sounds": [
+			 {
+				 "name": "thwip:thwipstartc2",
+				 "volume": 40.0
+			 }
+		 ]
+	 },
+	 "thwipstartcu1": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipstartcu1",
+		 "sounds": [
+			 {
+				 "name": "thwip:thwipstartcu1",
+				 "volume": 40.0
+			 }
+		 ]
+	 },
+	 "thwipstartcu2": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipstartcu2",
+		 "sounds": [
+			 {
+				 "name": "thwip:thwipstartcu2",
+				 "volume": 40.0
+			 }
+		 ]
+	 },
+	 "thwipstartcu3": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipstartcu3",
+		 "sounds": [
+			 {
+				 "name": "thwip:thwipstartcu3",
+				 "volume": 40.0
+			 }
+		 ]
+	 },
+	 "thwipstarttasm": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipstarttasm",
+		 "sounds": [
+			 {
+				 "name": "thwip:thwipstarttasm",
+				 "volume": 40.0
+			 }
+		 ]
+	 },
+	 "thwipstarttasm2": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipstarttasm2",
+		 "sounds": [
+			 {
+				 "name": "thwip:thwipstarttasm2",
+				 "volume": 40.0
+			 }
+		 ]
+	 },
+	 "thwipstarttasm3": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipstarttasm3",
+		 "sounds": [
+			 {
+				 "name": "thwip:thwipstarttasm3",
+				 "volume": 40.0
+			 }
+		 ]
+	 },
+	 "thwipcontinue": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipcontinue",
+		 "sounds": [ "thwip:thwipcontinue" ]
+	 },
+	 "thwipcontinuetasm": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipcontinuetasm",
+		 "sounds": [ "thwip:thwipcontinuetasm" ]
+	 },
+	 "thwipend": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipend",
+		 "sounds": [ "thwip:thwipend" ]
+	 },
+	 "thwipendtasm1": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipendtasm1",
+		 "sounds": [ "thwip:thwipendtasm1" ]
+	 },
+	 "thwipendtasm2": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipendtasm2",
+		 "sounds": [ "thwip:thwipendtasm2" ]
+	 },
+	 "thwiprelease": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwiprelease",
+		 "sounds": [ "thwip:thwiprelease" ]
+	 },
+	 "thwipchange": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipchange",
+		 "sounds": [ "thwip:thwipchange" ]
+	 },
+	 "thwipmode": {
+		 "category": "player",
+		 "subtitle": "thwip.subtitle.thwipmode",
+		 "sounds": [ "thwip:thwipmode" ]
+	 },
+	 "veter": {
+		 "category": "player",
+		 "subtitle": "grapplemod.subtitle.veter",
+		 "sounds": [ "grapplemod:veter" ]
+	 },
+   "rocket": {
+	"category": "player",
+   "subtitle": "grapplemod.subtitle.rocket",
+   "sounds": [ "grapplemod:rocket"]
+},
+   "enderstaff": {
+	"category": "player",
+   "subtitle": "grapplemod.subtitle.enderstaff",
+   "sounds": [ "grapplemod:enderstaff"]
+}
+}

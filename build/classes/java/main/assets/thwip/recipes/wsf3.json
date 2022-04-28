@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "thwip:classicwebshooter2",
+			"data": 32767
+		}, 
+		{
+			"item": "thwip:biocable",
+			"data": 32767
+		}
+	],
+	"result": {
+		"item": "thwip:classicwebshooter2"
+	}
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "thwipmod",
+  "name": "THWIP mod",
+  "description": "Mod adds spider-man web shooters",
+  "version": "1.12.2-v12",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["yyon", "almanzo"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
