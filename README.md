@@ -19,42 +19,42 @@ Download: https://www.curseforge.com/minecraft/mc-mods/thwip-mod
 
 # Usage
 Each web shooter has its own coefficient of elasticity of the web.
-You can pull the web in 2 ways
+## You can pull the web in 2 ways
 1. Hold down the LSHIFT key and turn the mouse wheel. In this variant, the player pulls the web in place.
 2. Slingshoot.
 
-2. Changing the length of the web
+## Changing the length of the web
 As the length of the web increases, particles will appear.
 1. Turn the mouse wheel
 
-3. Acceleration
+## Acceleration
 1. During the swing, hold the LSHIFT
 2. LSHIFT + mouse wheel
 3. You can change the overall speed by pressing the U key
 
-4. Enable thwip mod
+## Enable thwip mod
 1. To thwip, first you need to change the mode. To do this, press the T key. When switching to thwip mode, you will not be able to use the mouse wheel to change the item.
 
-5. To thwip
+## To thwip
 Left mouse button - thwip from the left web-shooter
 Right mouse button - thwip from the right web-shooter
 
-6. Changing cartridges
+## Changing cartridges
 1. Make sure that your inventory contains a bio-cable
 2. Press the R key
 
-7. Web-ball
+## Web-ball
 1. To use web ball, you need to thwip quickly. Web-ball appears when the length of the web does not exceed 10m.
 
-8. Disabling inertia
+## Disabling inertia
 Disabling inertia helps if you want to have more control over flights
 1. Press the I key
 
-9. The Endless web
+## The Endless web
 1. Command /endlessweb true
 
 
-Recommendations
+# Recommendations
 1. You can use this mod together with Heroes Expansion, to do this, install the additional Baubles mod. Put a web shooter in any Baubles slot
 2. To make the city seem more monumental, set the fov to 45-55.
 3. Install the tickratechanger mod, and set the tick rate to 17. This will make the acceleration of free fall in minecraft more realistic.
