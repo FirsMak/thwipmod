@@ -1,8 +1,11 @@
 # thwipmod
 Web swinging in minecraft
+
 https://www.reddit.com/r/Minecraft/comments/uhj98d/minecraft_spiderman_webswinging/
+
 https://www.reddit.com/r/Spiderman/comments/uhk2qc/webshooters_in_minecraft/
-Mod: https://www.curseforge.com/minecraft/mc-mods/thwip-mod
+
+Download: https://www.curseforge.com/minecraft/mc-mods/thwip-mod
 
 # At the moment, the mod has:
 - Web Ball
